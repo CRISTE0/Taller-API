@@ -6,8 +6,7 @@ Content-Type: application/json
     "nombre":"El Sica",
     "direccion":"El GUeTo",
     "telefono":66666666,
-    "documento":999987654,
-    "estado":true
+    "documento":999987654
 }
 
 
