@@ -48,9 +48,9 @@ router.delete("/clientes/:id",(req,res)=>{
 router.put("/clientes/:id",(req,res)=>{
 
     const {id} = req.params;
-    const {nombre,direccion,telefono,documento,estado} = req.body;
+    const {nombre,direccion,telefono,documento} = req.body;
     userSchema
-    .updateOne({_id:id},{$set:{nombre,direccion,telefono,documento,estado}})
+    .updateOne({_id:id},{$set:{nombre,direccion,telefono,documento}})
     .then((data)=> res.json(data))
     .catch((error) => res.json({message:error}))
 });

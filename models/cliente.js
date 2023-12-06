@@ -16,10 +16,6 @@ const userSchema = mongoose.Schema({
   documento:{
     type:Number,
     required: true,
-  },
-  estado:{
-    type:Boolean,
-    required: true,
   }
 });
 
